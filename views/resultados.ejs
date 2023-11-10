@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body class="container">
+    <h1>Resultados</h1>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Mensaje</th>
+                <th>Mensaje2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% datos.forEach(function(dato) { %>
+                <tr>
+                    <% var columns = dato.split(','); %>
+                    <td><%= columns[0] %></td>
+                    <td><%= columns[1] %></td>
+                    <td><%= columns[2] %></td>
+                    <td><%= columns[3] %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+    <a href="/">Volver al Menú</a>
+</body>
+</html>

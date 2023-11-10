@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario Node.js</title>
+</head>
+<body>
+    <h2>Formulario de Contacto</h2>
+    <form action="/guardar" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+        <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo" required>
+        <br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" rows="4" required></textarea>
+        <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

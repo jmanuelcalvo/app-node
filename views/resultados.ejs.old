@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body class="container">
+    <h1>Resultados</h1>
+    <ul class="result-list">
+        <% datos.forEach(function(dato) { %>
+            <li><%= dato %></li>
+        <% }); %>
+    </ul>
+    <a href="/">Volver al Menú</a>
+</body>
+</html>

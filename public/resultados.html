@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados</title>
+</head>
+<body>
+    <h2>Resultados</h2>
+    <ul id="datos-list"></ul>
+    
+    <script>
+        // JavaScript para mostrar los datos en la lista
+        const datosList = document.getElementById('datos-list');
+        const datos = JSON.parse('<%- JSON.stringify(datos) %>'); // Los datos se pasan desde el servidor
+
+        datos.forEach((dato) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = dato;
+            datosList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
